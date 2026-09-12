@@ -9,11 +9,12 @@
   main { max-width: 560px; margin: 0 auto; }
   h1 { font-size: 32px; color: #2F6B3A; letter-spacing: -0.3px; margin-bottom: 4px; }
   .sub { color: #5C6960; margin-top: 0; }
-  .btn { display: block; text-align: center; background: #2F6B3A; color: #fff; text-decoration: none; padding: 16px; border-radius: 14px; font-weight: 600; font-size: 19px; margin: 20px 0; }
+  .btn { display: block; text-align: center; background: #2F6B3A; color: #fff; text-decoration: none; padding: 16px; border-radius: 14px; font-weight: 600; font-size: 19px; margin: 16px 0; }
   .store { display: inline-block; margin: 4px 10px 4px 0; color: #2F6B3A; font-weight: 600; }
-  .code { font-size: 40px; letter-spacing: 10px; font-weight: 800; color: #2F6B3A; text-align: center; margin: 8px 0 20px; }
-  img { display: block; margin: 0 auto; width: 240px; max-width: 100%; border-radius: 12px; border: 1px solid #D9DED6; background: #fff; }
+  .code { font-size: 40px; letter-spacing: 10px; font-weight: 800; color: #2F6B3A; text-align: center; margin: 8px 0 12px; }
+  img.qr { display: block; margin: 12px auto 0; width: 220px; max-width: 100%; border-radius: 12px; border: 1px solid #D9DED6; background: #fff; }
   .card { background: #fff; border: 1px solid #D9DED6; border-radius: 14px; padding: 20px; margin: 20px 0; }
+  ol { padding-left: 22px; margin: 8px 0 0; } li { margin: 6px 0; }
   small { color: #5C6960; }
 </style>
 </head>
@@ -21,28 +22,47 @@
 <main>
   <h1>Plateful</h1>
   <p class="sub">Les recettes de la famille, notées par toute la famille.</p>
+
   <div class="card">
-    <strong>1. Installez Expo Go</strong> (gratuit) :
+    <strong>1. Acceptez l’invitation</strong> (une seule fois)
+    <ol>
+      <li>Ouvrez le courriel d’<b>Expo</b> intitulé « invited to join rarau ».</li>
+      <li>Touchez <b>Accept</b>, puis <b>Continue with Google</b> avec votre adresse Gmail.</li>
+    </ol>
+    <small>Pas de courriel ? Regardez dans Promotions ou Pourriels, ou demandez à Luca.</small>
+  </div>
+
+  <div class="card">
+    <strong>2. Installez Expo Go</strong> (gratuit) et connectez-vous :
     <div>
       <a class="store" href="https://apps.apple.com/app/expo-go/id982107779">App Store (iPhone)</a>
       <a class="store" href="https://play.google.com/store/apps/details?id=host.exp.exponent">Google Play (Android)</a>
     </div>
+    <ol>
+      <li>Dans Expo Go, touchez l’icône du compte en haut à droite.</li>
+      <li>Touchez <b>Log in</b>, puis <b>Continue with Google</b> avec la même adresse Gmail.</li>
+    </ol>
   </div>
+
   <div class="card">
-    <strong>2. Ouvrez Plateful</strong> — sur le téléphone, touchez ce bouton, ou scannez le code avec l’appareil photo :
-    <a class="btn" href="exp://u.expo.dev/4f3fa739-9fad-4d05-9b54-37f8f2ae7b86?channel-name=family&runtime-version=exposdk%3A57.0.0">Ouvrir Plateful dans Expo Go</a>
-    <img src="qr.png" alt="QR code Plateful">
+    <strong>3. Ouvrez Plateful</strong> — sur le téléphone, touchez ce bouton :
+    <a class="btn" href="exp://u.expo.dev/2929d487-eb7c-471b-9799-1dcbec0e7d5a?channel-name=family&runtime-version=exposdk%3A57.0.0">Ouvrir Plateful dans Expo Go</a>
+    <small>Depuis un ordinateur : scannez ce code avec l’appareil photo du téléphone.</small>
+    <img class="qr" src="qr.png" alt="QR code Plateful">
   </div>
+
   <div class="card">
-    <strong>3. Entrez le code famille</strong>, puis choisissez ou tapez votre prénom :
+    <strong>4. Entrez le code famille</strong>, puis touchez votre prénom ou tapez-le :
     <div class="code">JTYYZJ</div>
     <small>La prochaine fois : ouvrez Expo Go, Plateful est dans « Récemment ouvert ».</small>
   </div>
+
   <div class="card">
     <strong>Comment ça marche</strong> — une minute en vidéo :
     <video controls playsinline preload="metadata" style="display:block;width:100%;max-width:360px;margin:12px auto 0;border-radius:14px;background:#000" src="plateful-tutoriel-fr.mp4"></video>
     <p style="margin:12px 0 0"><small><a href="plateful-tutorial-en.mp4">English version</a></small></p>
   </div>
+
   <p><small><a href="privacy.html">Confidentialité / Privacy</a></small></p>
 </main>
 </body>
